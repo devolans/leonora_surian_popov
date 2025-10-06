@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Kontak Leonora Surian Popov | Glumica, Pjevačica i Autorica</title>
+    <meta name="description"
+        content="Imate pitanja za Leonoru Surian Popov? Pošaljite poruku putem kontakt obrasca. Leonora će rado odgovorit na vaša špitanja o njezinom radu i projektima">
+    <script src="/assets/navigation.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="w-full bg-primary-red-600 header-shadow z-10 relative px-5 2xl:px-0">
+            <div class="max-w-7xl mx-auto py-2 flex justify-between items-center">
+                <a href="/" class="group">
+                    <div
+                        class="size-16 rounded-full border border-off-white flex items-center justify-center group-hover:border-2 transition-all ease-in-out duration-300">
+                        <span class="leading-4 font-playfair text-4xl text-off-white">LS</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex">
+                    <a href="/biografija/">BIO</a>
+                    <a href="/gluma/">GLUMA</a>
+                    <a href="/glazba/">GLAZBA</a>
+                    <div class="dropdown">
+                        <a href="#"><span class="flex gap-4 items-center">PROJEKTI <img src="/assets/img/down-arrow.svg"
+                                    alt="down arrow svg" class="size-4"></span></a>
+                        <div class="dropdown-content">
+                            <a href="/projekti/jalta,jalta">JALTA, JALTA!</a>
+                            <a href="/projekti/najbolji-vicevi-o-plavusama" class="mt-2">NAJBOLJI VICEVI O PLAVUŠAMA</a>
+                        </div>
+                    </div>
+                    <a href="/press/">PRESS</a>
+                    <a href="/kontakt/">KONTAKT</a>
+                </nav>
+                <div class="size-16 lg:flex items-center hidden">
+                    <div class="dropdown">
+                        <a href="#">
+                            <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-10">
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="/" class="size-10 flex items-center">
+                                <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-10">
+                            </a>
+                            <a href="/it/" class="size-10 flex items-center mt-4">
+                                <img src="/assets/img/ita.svg" alt="Italian flag svg" class="size-10">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- hamburger -->
+                <div class="lg:hidden flex items-center">
+                    <button id="hamburger-btn" class="text-off-white hover:text-secondary-yellow-100 focus:outline-none"
+                        aria-label="Toggle menu" aria-expanded="false">
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                    </button>
+                </div>
+
+                <div id="mobile-menu"
+                    class="lg:hidden absolute top-full left-0 w-full bg-primary-red-600 header-shadow z-20">
+                    <div class="flex flex-col items-center py-4 space-y-2">
+                        <!-- Added actual links -->
+                        <a href="/biografija/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">BIO</a>
+                        <a href="/gluma/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">GLUMA</a>
+                        <a href="/glazba/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">GLAZBA</a>
+                        <!-- Example for Projects - needs JS for dropdown or separate links -->
+                        <a href="/projekti/jalta,jalta/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PROJEKT:
+                            Jalta, Jalta</a>
+                        <a href="/projekti/najbolji-vicevi-o-plavusama/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PROJEKT:
+                            Vicevi</a>
+                        <a href="/press/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PRESS</a>
+                        <a href="/kontakt/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">KONTAKT</a>
+                        <!-- Mobile Language Switcher Example -->
+                        <div class="flex justify-center gap-4 mt-4 pt-4 border-t border-primary-red-400 w-full px-4">
+                            <a href="/" class="opacity-50 hover:opacity-100 transition duration-200">
+                                <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-8">
+                            </a>
+                            <a href="/it/" class="opacity-50 hover:opacity-100 transition duration-200">
+                                <img src="/assets/img/ita.svg" alt="Italian flag svg" class="size-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div
+                class="bg-[url('/assets/img/contact.webp')] h-[50svh] lg:h-[30rem] bg-cover bg-top bg-no-repeat relative z-0">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="relative max-w-7xl mx-auto px-5 2xl:px-0">
+                    <span class="h1-decoration">KONTAKT</span>
+                    <h1 class="relative pt-40">KONTAKT</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="max-w-7xl mx-auto my-20 bg-primary-red-300 rounded-md p-5 lg:p-20 grid lg:grid-cols-10">
+                <div class="lg:col-span-4">
+                    <h2>Imate pitanja?</h2>
+                    <h3>Pošaljite mi poruku.</h3>
+                </div>
+                <div class="lg:col-span-6 mt-10 lg:mt-0">
+                    <form action="">
+                        <div class="relative w-full">
+                            <input id="name" name="name" type="text"
+                                class="peer h-10 w-full border-l-0 border-r-0 border-t-0 border-b-2 border-primary-red-100 text-white placeholder-transparent bg-transparent focus:outline-none"
+                                placeholder="Ime i Prezime*" required />
+                            <label for="name"
+                                class="absolute left-0 -top-3.5 text-primary-red-100 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-off-white peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-off-white peer-focus:text-sm">Ime
+                                i Prezime*</label>
+                        </div>
+                        <div class="relative w-full my-8">
+                            <input id="email" name="email" type="email"
+                                class="peer h-10 w-full border-l-0 border-r-0 border-t-0 border-b-2 border-primary-red-100 text-white placeholder-transparent bg-transparent focus:outline-none"
+                                placeholder="Email*" required />
+                            <label for="name"
+                                class="absolute left-0 -top-3.5 text-primary-red-100 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-off-white peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-off-white peer-focus:text-sm">Email*</label>
+                        </div>
+                        <div class="relative w-full my-8">
+                            <input id="naslov" name="naslov" type="text"
+                                class="peer h-10 w-full border-l-0 border-r-0 border-t-0 border-b-2 border-primary-red-100 text-white placeholder-transparent bg-transparent focus:outline-none"
+                                placeholder="Naslov poruke*" required />
+                            <label for="naslov"
+                                class="absolute left-0 -top-3.5 text-primary-red-100 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-off-white peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-off-white peer-focus:text-sm">Naslov
+                                poruke*</label>
+                        </div>
+                        <div class="relative w-full">
+                            <textarea id="poruka" name="poruka" rows="6"
+                                class="peer w-full border-l-0 border-r-0 border-t-0 border-b-2 border-primary-red-100 text-white placeholder-transparent bg-transparent focus:outline-none"
+                                placeholder="Poruka*" required></textarea>
+                            <label for="name"
+                                class="absolute left-0 -top-3.5 text-primary-red-100 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-off-white peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-off-white peer-focus:text-sm">Poruka*</label>
+                        </div>
+                        <div class="flex items-center mt-5">
+                            <input id="accept-gdpr" name="accept-gdpr" type="checkbox"
+                                class="rounded border-2 bg-transparent text-off-white h-4 w-4 cursor-pointer"
+                                required />
+                            <label for="accept-gdpr" class="ml-2 block text-sm text-off-white cursor-pointer">Slažem se
+                                da se moji podaci koriste u svrhu odgovora na moj upit.
+                            </label>
+                        </div>
+                        <button type="submit" class="primary-button mt-5">Pošalji poruku</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="w-full bg-black h-40 flex items-center justify-center">
+            <div class="flex flex-col items-center">
+                <p>LEONORA SURIAN POPOV</p>
+                <div class="border-b border-off-white w-40"></div>
+                <div class="flex gap-5 pt-5">
+                    <a href="https://www.instagram.com/leonorasurian/"><img src="/assets/img/insta.svg"
+                            alt="instagram logo svg" class="size-6 fill-off-white hover:fill-secondary-yellow-100"></a>
+                    <a
+                        href="https://www.facebook.com/people/Leonora-Surian-Popov/pfbid027JkLcD8RR683jh9dVBep4eYKDx2UzsZZ1eqsusnSkpjZ5vY42wGbiswkh2Jq6VXrl/"><img
+                            src="/assets/img/face.svg" alt="facebook logo svg"
+                            class="size-6 fill-off-white hover:fill-secondary-yellow-100"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
