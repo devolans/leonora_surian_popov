@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/lightbox/css/lightbox.min.css">
+    <title>Leonora Surian Popov | Mediji</title>
+    <meta name="description"
+        content="Otkrijte što mediji pišu o Leonori Surijan Popov. Pregledajte članke, intervjue i naslove iz novina i časopisa o njezinoj uspješnoj karijeri">
+    <script src="/assets/navigation.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="w-full bg-primary-red-600 header-shadow z-10 relative px-5 2xl:px-0">
+            <div class="max-w-7xl mx-auto py-2 flex justify-between items-center">
+                <a href="/" class="group">
+                    <div
+                        class="size-16 rounded-full border border-off-white flex items-center justify-center group-hover:border-2 transition-all ease-in-out duration-300">
+                        <span class="leading-4 font-playfair text-4xl text-off-white">LS</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex">
+                    <a href="/biografija/">BIO</a>
+                    <a href="/gluma/">GLUMA</a>
+                    <a href="/glazba/">GLAZBA</a>
+                    <div class="dropdown">
+                        <a href="#"><span class="flex gap-4 items-center">PROJEKTI <img src="/assets/img/down-arrow.svg"
+                                    alt="down arrow svg" class="size-4"></span></a>
+                        <div class="dropdown-content">
+                            <a href="/projekti/jalta,jalta">JALTA, JALTA!</a>
+                            <a href="/projekti/najbolji-vicevi-o-plavusama" class="mt-2">NAJBOLJI VICEVI O PLAVUŠAMA</a>
+                        </div>
+                    </div>
+                    <a href="/press/">PRESS</a>
+                    <a href="/kontakt/">KONTAKT</a>
+                </nav>
+                <div class="size-16 lg:flex items-center hidden">
+                    <div class="dropdown">
+                        <a href="#">
+                            <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-10">
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="/" class="size-10 flex items-center">
+                                <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-10">
+                            </a>
+                            <a href="/it/" class="size-10 flex items-center mt-4">
+                                <img src="/assets/img/ita.svg" alt="Italian flag svg" class="size-10">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- hamburger -->
+                <div class="lg:hidden flex items-center">
+                    <button id="hamburger-btn" class="text-off-white hover:text-secondary-yellow-100 focus:outline-none"
+                        aria-label="Toggle menu" aria-expanded="false">
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                    </button>
+                </div>
+
+                <div id="mobile-menu"
+                    class="lg:hidden absolute top-full left-0 w-full bg-primary-red-600 header-shadow z-20">
+                    <div class="flex flex-col items-center py-4 space-y-2">
+                        <!-- Added actual links -->
+                        <a href="/biografija/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">BIO</a>
+                        <a href="/gluma/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">GLUMA</a>
+                        <a href="/glazba/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">GLAZBA</a>
+                        <!-- Example for Projects - needs JS for dropdown or separate links -->
+                        <a href="/projekti/jalta,jalta/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PROJEKT:
+                            Jalta, Jalta</a>
+                        <a href="/projekti/najbolji-vicevi-o-plavusama/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PROJEKT:
+                            Vicevi</a>
+                        <a href="/press/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PRESS</a>
+                        <a href="/kontakt/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">KONTAKT</a>
+                        <!-- Mobile Language Switcher Example -->
+                        <div class="flex justify-center gap-4 mt-4 pt-4 border-t border-primary-red-400 w-full px-4">
+                            <a href="/" class="opacity-50 hover:opacity-100 transition duration-200">
+                                <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-8">
+                            </a>
+                            <a href="/it/" class="opacity-50 hover:opacity-100 transition duration-200">
+                                <img src="/assets/img/ita.svg" alt="Italian flag svg" class="size-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div
+                class="bg-[url('/assets/img/press.webp')] h-[50svh] lg:h-[30rem] bg-cover bg-top bg-no-repeat relative z-0">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="relative max-w-7xl mx-auto px-5 2xl:px-0">
+                    <span class="h1-decoration">MEDIJI</span>
+                    <h1 class="relative pt-40">MEDIJI</h1>
+                    <span class="h1-subheader">Što pišu o njoj</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="max-w-7xl mx-auto my-20 flex gap-5 flex-wrap px-5 2xl:px-0">
+                <a class="press-link" href="/assets/img/press001.webp" data-lightbox="press-leonora"
+                    data-title="feniks casopis br 267 naslovna">
+                    <img src="/assets/img/press001.webp" alt="feniks casopis br 267 naslovna" />
+                </a>
+                <a class="press-link" href="/assets/img/press002.webp" data-lightbox="press-leonora"
+                    data-title="jutarnji list revija br 121.">
+                    <img src="/assets/img/press002.webp" alt="jutarnji list revija br 121 1" />
+                </a>
+                <a class="press-link" href="/assets/img/press003.webp" data-lightbox="press-leonora"
+                    data-title="jutarnji list revija br 121">
+                    <img src="/assets/img/press003.webp" alt="jutarnji list revija br 121 2" />
+                </a>
+                <a class="press-link" href="/assets/img/press004.webp" data-lightbox="press-leonora"
+                    data-title="novi list 2005">
+                    <img src="/assets/img/press004.webp" alt="novinski icjecak novi list 2005" />
+                </a>
+                <a class="press-link" href="/assets/img/press005.webp" data-lightbox="press-leonora"
+                    data-title="novi list life 2005">
+                    <img src="/assets/img/press005.webp" alt="novinski icjecak novi list life 2005" />
+                </a>
+                <a class="press-link" href="/assets/img/press006.webp" data-lightbox="press-leonora"
+                    data-title="skandi broj 209 2005">
+                    <img src="/assets/img/press006.webp" alt="skandi broj 209 2005 naslovna" />
+                </a>
+                <a class="press-link" href="/assets/img/press007.webp" data-lightbox="press-leonora"
+                    data-title="zivot br 27">
+                    <img src="/assets/img/press007.webp" alt="naslovna zivot br 27 naslovna" />
+                </a>
+                <a class="press-link" href="/assets/img/press010.webp" data-lightbox="press-leonora"
+                    data-title="story br 13">
+                    <img src="/assets/img/press010.webp" alt="story casopis br 13" />
+                </a>
+                <a class="press-link" href="/assets/img/press009.webp" data-lightbox="press-leonora"
+                    data-title="story br 13">
+                    <img src="/assets/img/press009.webp" alt="story casopis br 13" />
+                </a>
+                <a class="press-link" href="/assets/img/press008.webp" data-lightbox="press-leonora"
+                    data-title="story br 13">
+                    <img src="/assets/img/press008.webp" alt="story casopis br 13" />
+                </a>
+                <a class="press-link" href="/assets/img/press011.webp" data-lightbox="press-leonora"
+                    data-title="STEPHANIE br_11 2007s">
+                    <img src="/assets/img/press011.webp" alt="story casopis br 13" />
+                </a>
+                <a class="press-link" href="/assets/img/press012.webp" data-lightbox="press-leonora"
+                    data-title="STEPHANIE br_11 2007">
+                    <img src="/assets/img/press012.webp" alt="story casopis br 13" />
+                </a>
+                <a class="press-link" href="/assets/img/press013.webp" data-lightbox="press-leonora"
+                    data-title="STEPHANIE br_11 2007">
+                    <img src="/assets/img/press013.webp" alt="story casopis br 13" />
+                </a>
+                <a class="press-link" href="/assets/img/press014.webp" data-lightbox="press-leonora"
+                    data-title="novi list life">
+                    <img src="/assets/img/press014.webp" alt="novi list casopis" />
+                </a>
+                <a class="press-link" href="/assets/img/press015.webp" data-lightbox="press-leonora"
+                    data-title="lisa casopis br_46 10.11.2008">
+                    <img src="/assets/img/press015.webp" alt="lisa casopis br_46 10.11.2008" />
+                </a>
+                <a class="press-link" href="/assets/img/press016.webp" data-lightbox="press-leonora"
+                    data-title="lisa casopis br_46 10.11.2008">
+                    <img src="/assets/img/press016.webp" alt="lisa casopis br_46 10.11.2008" />
+                </a>
+                <a class="press-link" href="/assets/img/press017.webp" data-lightbox="press-leonora"
+                    data-title="lisa casopis br_46 10.11.2008">
+                    <img src="/assets/img/press017.webp" alt="lisa casopis br_46 10.11.2008" />
+                </a>
+                <a class="press-link" href="/assets/img/press018.webp" data-lightbox="press-leonora"
+                    data-title="dnevni list 5.12.08">
+                    <img src="/assets/img/press018.webp" alt="dnevni list 5.12.08" />
+                </a>
+                <a class="press-link" href="/assets/img/press020.webp" data-lightbox="press-leonora"
+                    data-title="gala prosinac-2008">
+                    <img src="/assets/img/press020.webp" alt="gala prosinac-2008-1" />
+                </a>
+                <a class="press-link" href="/assets/img/press021.webp" data-lightbox="press-leonora"
+                    data-title="EXTRA 31 kolovoz 2009">
+                    <img src="/assets/img/press021.webp" alt="EXTRA-31.kolovoz.2009-1" />
+                </a>
+                <a class="press-link" href="/assets/img/press022.webp" data-lightbox="press-leonora"
+                    data-title="EXTRA 31 kolovoz 2009">
+                    <img src="/assets/img/press022.webp" alt="EXTRA-31.kolovoz.2009" />
+                </a>
+                <a class="press-link" href="/assets/img/press023.webp" data-lightbox="press-leonora"
+                    data-title="EXTRA 31 kolovoz 2009">
+                    <img src="/assets/img/press023.webp" alt="EXTRA-31.kolovoz.2009" />
+                </a>
+                <a class="press-link" href="/assets/img/press024.webp" data-lightbox="press-leonora"
+                    data-title="EXTRA 31 kolovoz 2009">
+                    <img src="/assets/img/press024.webp" alt="EXTRA-31.kolovoz.2009" />
+                </a>
+                <a class="press-link" href="/assets/img/press025.webp" data-lightbox="press-leonora"
+                    data-title="EXTRA 31 kolovoz 2009">
+                    <img src="/assets/img/press025.webp" alt="EXTRA-31.kolovoz.2009" />
+                </a>
+                <a class="press-link" href="/assets/img/press026.webp" data-lightbox="press-leonora"
+                    data-title="FORMASANA svibanj 2009">
+                    <img src="/assets/img/press026.webp" alt="FORMASANA svibanj 2009" />
+                </a>
+                <a class="press-link" href="/assets/img/press027.webp" data-lightbox="press-leonora"
+                    data-title="FORMASANA svibanj 2009">
+                    <img src="/assets/img/press027.webp" alt="FORMASANA svibanj 2009" />
+                </a>
+                <a class="press-link" href="/assets/img/press028.webp" data-lightbox="press-leonora"
+                    data-title="24 sata express, 22 srpanj 2011">
+                    <img src="/assets/img/press028.webp" alt="24 sata express, 22 srpanj 2011" />
+                </a>
+                <a class="press-link" href="/assets/img/press029.webp" data-lightbox="press-leonora"
+                    data-title="24 sata express, 22 srpanj 2011">
+                    <img src="/assets/img/press029.webp" alt="24 sata express, 22 srpanj 2011" />
+                </a>
+                <a class="press-link" href="/assets/img/press030.webp" data-lightbox="press-leonora"
+                    data-title="cantus prosinac 2010">
+                    <img src="/assets/img/press030.webp" alt="cantus prosinac 2010" />
+                </a>
+                <a class="press-link" href="/assets/img/press031.webp" data-lightbox="press-leonora"
+                    data-title="Festival u Dvigradu">
+                    <img src="/assets/img/press031.webp" alt="Festival_u_Dvigradu" />
+                </a>
+                <a class="press-link" href="/assets/img/press032.webp" data-lightbox="press-leonora"
+                    data-title="glorija kolovoz 2011">
+                    <img src="/assets/img/press032.webp" alt="glorija kolovoz 2011" />
+                </a>
+                <a class="press-link" href="/assets/img/press033.webp" data-lightbox="press-leonora"
+                    data-title="in tower jesen 2011">
+                    <img src="/assets/img/press033.webp" alt="in tower jesen 2011" />
+                </a>
+                <a class="press-link" href="/assets/img/press034.webp" data-lightbox="press-leonora"
+                    data-title="in tower jesen 2011">
+                    <img src="/assets/img/press034.webp" alt="in tower jesen 2011" />
+                </a>
+                <a class="press-link" href="/assets/img/press035.webp" data-lightbox="press-leonora"
+                    data-title="in tower jesen 2011">
+                    <img src="/assets/img/press035.webp" alt="in tower jesen 2011" />
+                </a>
+                <a class="press-link" href="/assets/img/press036.webp" data-lightbox="press-leonora"
+                    data-title="Novi List Life 10">
+                    <img src="/assets/img/press036.webp" alt="Novi List Life 10" />
+                </a>
+                <a class="press-link" href="/assets/img/press037.webp" data-lightbox="press-leonora"
+                    data-title="Novi List Life 10">
+                    <img src="/assets/img/press037.webp" alt="Novi List Life 10" />
+                </a>
+                <a class="press-link" href="/assets/img/press038.webp" data-lightbox="press-leonora"
+                    data-title="Novi List Life 10">
+                    <img src="/assets/img/press038.webp" alt="Novi List Life 10" />
+                </a>
+                <a class="press-link" href="/assets/img/press039.webp" data-lightbox="press-leonora" data-title="extra">
+                    <img src="/assets/img/press039.webp" alt="Extra časopis Leonora" />
+                </a>
+                <a class="press-link" href="/assets/img/press040.webp" data-lightbox="press-leonora" data-title="extra">
+                    <img src="/assets/img/press040.webp" alt="Extra časopis Leonora" />
+                </a>
+                <a class="press-link" href="/assets/img/press041.webp" data-lightbox="press-leonora"
+                    data-title="Lisa 10">
+                    <img src="/assets/img/press041.webp" alt="Lisa casopis Leonora Surian" />
+                </a>
+                <a class="press-link" href="/assets/img/press042.webp" data-lightbox="press-leonora"
+                    data-title="Lisa 10">
+                    <img src="/assets/img/press042.webp" alt="Lisa casopis Leonora Surian" />
+                </a>
+                <a class="press-link" href="/assets/img/press043.webp" data-lightbox="press-leonora"
+                    data-title="Intervju 7">
+                    <img src="/assets/img/press043.webp" alt="Intervju 7" />
+                </a>
+                <a class="press-link" href="/assets/img/press044.webp" data-lightbox="press-leonora"
+                    data-title="Intervju 1">
+                    <img src="/assets/img/press044.webp" alt="Intervju 1" />
+                </a>
+                <a class="press-link" href="/assets/img/press045.webp" data-lightbox="press-leonora"
+                    data-title="Intervju 2">
+                    <img src="/assets/img/press045.webp" alt="Intervju 2" />
+                </a>
+                <a class="press-link" href="/assets/img/press046.webp" data-lightbox="press-leonora"
+                    data-title="TRUDNA I LIJEPA 2013 editorijal 1">
+                    <img src="/assets/img/press046.webp" alt="TRUDNA I LIJEPA 2013 editorijal 1" />
+                </a>
+                <a class="press-link" href="/assets/img/press047.webp" data-lightbox="press-leonora"
+                    data-title="Mama i Beba srpanj 2015">
+                    <img src="/assets/img/press047.webp" alt="Mama i Beba srpanj 2015" />
+                </a>
+                <a class="press-link" href="/assets/img/press048.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press048.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press049.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press049.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press050.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press050.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press051.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press051.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press052.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press052.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press053.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press053.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press054.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press054.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press055.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press055.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press056.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press056.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press057.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press057.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press058.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press058.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press059.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press059.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press060.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press060.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press061.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press061.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press062.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press062.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press063.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press063.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press064.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press064.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press065.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press065.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press066.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press066.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press067.webp" data-lightbox="press-leonora">
+                    <img src="/assets/img/press067.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press068.webp" data-lightbox="press-leonora"
+                    data-title="2021 svibanj, la Voce del popolo, - celicne magnolije">
+                    <img src="/assets/img/press068.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press069.webp" data-lightbox="press-leonora"
+                    data-title="7.2021 NACIONAL">
+                    <img src="/assets/img/press069.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press070.webp" data-lightbox="press-leonora"
+                    data-title="7.2021 NACIONAL">
+                    <img src="/assets/img/press070.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press071.webp" data-lightbox="press-leonora"
+                    data-title="7.2021 NACIONAL">
+                    <img src="/assets/img/press071.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press072.webp" data-lightbox="press-leonora"
+                    data-title="8.2021 STORY">
+                    <img src="/assets/img/press072.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press073.webp" data-lightbox="press-leonora"
+                    data-title="10.2021 EXSPRESS">
+                    <img src="/assets/img/press073.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press074.webp" data-lightbox="press-leonora"
+                    data-title="10.2021 EXSPRESS">
+                    <img src="/assets/img/press074.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press075.webp" data-lightbox="press-leonora"
+                    data-title="10.2021 EXSPRESS">
+                    <img src="/assets/img/press075.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press076.webp" data-lightbox="press-leonora"
+                    data-title="10.2021 EXSPRESS">
+                    <img src="/assets/img/press076.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press077.webp" data-lightbox="press-leonora"
+                    data-title="10.2021 EXSPRESS">
+                    <img src="/assets/img/press077.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press078.webp" data-lightbox="press-leonora"
+                    data-title="2023 rujan , la Voce del popolo, INTERVJU">
+                    <img src="/assets/img/press078.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press079.webp" data-lightbox="press-leonora"
+                    data-title="2023 lipanj, Leonora-Surian-Popov VIJENAC-">
+                    <img src="/assets/img/press079.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press080.webp" data-lightbox="press-leonora"
+                    data-title="6.6.2023 NACIONAL">
+                    <img src="/assets/img/press080.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press081.webp" data-lightbox="press-leonora"
+                    data-title="6.6.2023 NACIONAL">
+                    <img src="/assets/img/press081.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press082.webp" data-lightbox="press-leonora"
+                    data-title="2023 rujan, la Voce del popolo, OSVRT">
+                    <img src="/assets/img/press082.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press083.webp" data-lightbox="press-leonora"
+                    data-title="2023 rujan, la Voce del popolo, OSVRT">
+                    <img src="/assets/img/press083.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press084.webp" data-lightbox="press-leonora"
+                    data-title="2023 rujan , la Voce del popolo, INTERVJU">
+                    <img src="/assets/img/press084.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press085.webp" data-lightbox="press-leonora"
+                    data-title="2023 rujan Novi List">
+                    <img src="/assets/img/press085.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press086.webp" data-lightbox="press-leonora"
+                    data-title="2023 rujan Novi List">
+                    <img src="/assets/img/press086.webp" />
+                </a>
+                <a class="press-link" href="/assets/img/press087.webp" data-lightbox="press-leonora"
+                    data-title="12.2023 VIJENAC">
+                    <img src="/assets/img/press087.webp" />
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="max-w-7xl mx-auto relative my-20 flex items-start px-5 2xl:px-0">
+                <div class="absolute bg-primary-red-400 h-[33rem] w-96 -top-5 -left-5 hidden lg:block"></div>
+                <div class="w-[30rem] relative bg-white p-0 hidden lg:block">
+                    <img src="/assets/img/magazin_cover.webp" alt="Leonora Surian 24 sata TV tjedan naslovna"
+                        class="shadow shadow-primary-red-400 w-full h-full object-cover object-center">
+                </div>
+                <div
+                    class="relative lg:w-[52.5rem] lg:p-20 bg-primary-red-500 z-10 lg:mt-20 lg:-ml-10 lg:hadow lg:shadow-primary-red-500">
+                    <h2>Intervjui</h2>
+                    <img src="/assets/img/magazin_cover.webp" alt="Leonora Surian 24 sata TV tjedan naslovna"
+                        class="shadow shadow-primary-red-400 w-full md:w-1/2 mx-auto object-cover object-center my-5 lg:hidden">
+                    <a href="https://hrvatskoglumiste.hr/volim-izazove-i-stalno-se-trazim-a-najbolje-se-izrazavam-kroz-spoj-glume-i-pjevanja/"
+                        class="block underline hover:no-underline text-off-white mt-10" target="_blank">Hrvatsko
+                        Glumište- Intervju: Leonora Surian Popov</a>
+                    <a href="http://www.scena.hr/kultura/leonora-surian-ravnateljica-drame-hnk/"
+                        class="block underline hover:no-underline text-off-white mt-2" target="_blank">scena.hr -
+                        Leonora Surian ravnateljica Talijanske drame riječkog HNK</a>
+                    <a href="http://www.scena.hr/naslovnica/ekskluzivno-prvi-dani-majcinstva-glumice-leonore-surian/"
+                        class="block underline hover:no-underline text-off-white mt-2" target="_blank">scena.hr - Prvi
+                        dani majčinstva glumice Leonore Surian!</a>
+                </div>
+                <div class="absolute bg-primary-red-400 h-44 w-96 top-64 -right-5 hidden lg:block"></div>
+            </div>
+        </section>
+        <section>
+            <div class="max-w-7xl mx-auto grid grid-cols-1 my-20 gap-10">
+                <div class="w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/Qdbc5OYOtMI?si=GMJO7TlW-5rh4vB9"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="w-full bg-black h-40 flex items-center justify-center">
+            <div class="flex flex-col items-center">
+                <p>LEONORA SURIAN POPOV</p>
+                <div class="border-b border-off-white w-40"></div>
+                <div class="flex gap-5 pt-5">
+                    <a href="https://www.instagram.com/leonorasurian/"><img src="/assets/img/insta.svg"
+                            alt="instagram logo svg" class="size-6 fill-off-white hover:fill-secondary-yellow-100"></a>
+                    <a
+                        href="https://www.facebook.com/people/Leonora-Surian-Popov/pfbid027JkLcD8RR683jh9dVBep4eYKDx2UzsZZ1eqsusnSkpjZ5vY42wGbiswkh2Jq6VXrl/"><img
+                            src="/assets/img/face.svg" alt="facebook logo svg"
+                            class="size-6 fill-off-white hover:fill-secondary-yellow-100"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/lightbox/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Black.ttf") format("truetype");
+  font-weight: 900; /* Black weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-BlackItalic.ttf") format("truetype");
+  font-weight: 900; /* Black weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-BoldItalic.ttf") format("truetype");
+  font-weight: 700; /* Bold weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Light.ttf") format("truetype");
+  font-weight: 300; /* Light weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-LightItalic.ttf") format("truetype");
+  font-weight: 300; /* Light weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Regular.ttf") format("truetype"); /* Ensure correct file name if typo exists in provided list */
+  font-weight: 400; /* Normal weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Italic.ttf") format("truetype");
+  font-weight: 400; /* Normal weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Thin.ttf") format("truetype");
+  font-weight: 100; /* Thin weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-ThinItalic.ttf") format("truetype");
+  font-weight: 100; /* Thin weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Adjust according to the actual weight range available in your font file */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900; /* Adjust according to the actual weight range available in your font file */
+  font-style: italic;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-lato bg-gradient-to-b from-primary-red-600 to-primary-red-500 min-h-screen;
+}
+main {
+  @apply overflow-hidden xl:overflow-auto;
+}
+p {
+  @apply text-base text-off-white;
+}
+
+h5 {
+  @apply font-playfair text-xl text-off-white;
+}
+
+h4 {
+  @apply font-playfair text-2xl text-off-white;
+}
+
+h3 {
+  @apply font-playfair text-3xl text-off-white;
+}
+
+h2 {
+  @apply font-playfair text-4xl text-off-white;
+}
+
+h1 {
+  @apply font-playfair text-3xl sm:text-5xl text-off-white;
+}
+
+.h1-subheader {
+  @apply font-lato text-2xl text-off-white;
+}
+
+.h1-decoration {
+  @apply absolute text-off-white/5 top-32 -left-10 text-9xl font-playfair;
+}
+
+nav {
+  @apply inline-flex gap-10;
+}
+
+nav a {
+  @apply text-lg text-off-white inline-block;
+}
+
+nav a:after {
+  display: block;
+  content: "";
+  width: inherit;
+  border-bottom: solid 2px #fafafa;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+nav a:hover:after {
+  transform: scaleX(1);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  @apply bg-primary-red-500 p-6 rounded-md z-10 absolute hidden border border-primary-red-400;
+}
+
+.dropdown-content a {
+  @apply text-lg text-off-white whitespace-nowrap;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header-shadow {
+  box-shadow: 0 2px 40px rgba(255, 255, 255, 0.2);
+}
+
+.primary-button {
+  @apply bg-secondary-yellow-100 text-primary-red-500 tracking-widest leading-4 uppercase py-3 px-4 rounded-md md:text-lg hover:shadow hover:shadow-secondary-yellow-100 hover:bg-secondary-yellow-100/90 transition-all duration-300 ease-in-out;
+}
+
+.masonry {
+  @apply lg:flex gap-4 w-full;
+}
+/* .masonry-column {
+  padding-left: 1rem;
+  background-clip: padding-box;
+} */
+.masonry-column {
+  @apply w-full;
+}
+
+.press-link {
+  @apply h-60 w-auto;
+}
+
+.press-link img {
+  @apply h-full w-full object-cover;
+}
+
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+#mobile-menu.active {
+  max-height: 600px;
+}
+#hamburger-btn span {
+  transition: all 0.3s ease-in-out;
+}
+#hamburger-btn.active span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+#hamburger-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+#hamburger-btn.active span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+#hamburger-btn span {
+  background-color: currentColor;
+}

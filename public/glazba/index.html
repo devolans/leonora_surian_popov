@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Glazbena Karijera Leonore Surian Popov - Mjuzikl, Jazz i Uspavanke</title>
+    <meta name="description"
+        content="Otkrijte glazbenu karijeru Leonore Surian Popov, poznate hrvatske glumice i pjevačice. Poslušajte njezine albume 'Nanita', 'Bijeli Božić' i 'Moj mali svijet' te saznajte više o njezinim glazbenim projektima i nastupima.">
+    <script src="/assets/navigation.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="w-full bg-primary-red-600 header-shadow z-10 relative px-5 2xl:px-0">
+            <div class="max-w-7xl mx-auto py-2 flex justify-between items-center">
+                <a href="/" class="group">
+                    <div
+                        class="size-16 rounded-full border border-off-white flex items-center justify-center group-hover:border-2 transition-all ease-in-out duration-300">
+                        <span class="leading-4 font-playfair text-4xl text-off-white">LS</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex">
+                    <a href="/biografija/">BIO</a>
+                    <a href="/gluma/">GLUMA</a>
+                    <a href="/glazba/">GLAZBA</a>
+                    <div class="dropdown">
+                        <a href="#"><span class="flex gap-4 items-center">PROJEKTI <img src="/assets/img/down-arrow.svg"
+                                    alt="down arrow svg" class="size-4"></span></a>
+                        <div class="dropdown-content">
+                            <a href="/projekti/jalta,jalta">JALTA, JALTA!</a>
+                            <a href="/projekti/najbolji-vicevi-o-plavusama" class="mt-2">NAJBOLJI VICEVI O PLAVUŠAMA</a>
+                        </div>
+                    </div>
+                    <a href="/press/">PRESS</a>
+                    <a href="/kontakt/">KONTAKT</a>
+                </nav>
+                <div class="size-16 lg:flex items-center hidden">
+                    <div class="dropdown">
+                        <a href="#">
+                            <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-10">
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="/" class="size-10 flex items-center">
+                                <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-10">
+                            </a>
+                            <a href="/it/" class="size-10 flex items-center mt-4">
+                                <img src="/assets/img/ita.svg" alt="Italian flag svg" class="size-10">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- hamburger -->
+                <div class="lg:hidden flex items-center">
+                    <button id="hamburger-btn" class="text-off-white hover:text-secondary-yellow-100 focus:outline-none"
+                        aria-label="Toggle menu" aria-expanded="false">
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                    </button>
+                </div>
+
+                <div id="mobile-menu"
+                    class="lg:hidden absolute top-full left-0 w-full bg-primary-red-600 header-shadow z-20">
+                    <div class="flex flex-col items-center py-4 space-y-2">
+                        <!-- Added actual links -->
+                        <a href="/biografija/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">BIO</a>
+                        <a href="/gluma/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">GLUMA</a>
+                        <a href="/glazba/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">GLAZBA</a>
+                        <!-- Example for Projects - needs JS for dropdown or separate links -->
+                        <a href="/projekti/jalta,jalta/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PROJEKT:
+                            Jalta, Jalta</a>
+                        <a href="/projekti/najbolji-vicevi-o-plavusama/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PROJEKT:
+                            Vicevi</a>
+                        <a href="/press/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PRESS</a>
+                        <a href="/kontakt/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">KONTAKT</a>
+                        <!-- Mobile Language Switcher Example -->
+                        <div class="flex justify-center gap-4 mt-4 pt-4 border-t border-primary-red-400 w-full px-4">
+                            <a href="/" class="opacity-50 hover:opacity-100 transition duration-200">
+                                <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-8">
+                            </a>
+                            <a href="/it/" class="opacity-50 hover:opacity-100 transition duration-200">
+                                <img src="/assets/img/ita.svg" alt="Italian flag svg" class="size-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div
+                class="bg-[url('/assets/img/glazba.webp')] h-[50svh] lg:h-[34rem] bg-cover bg-top bg-no-repeat relative z-0">
+                <div class="absolute inset-0 bg-black/50"></div>
+                <div class="relative max-w-7xl mx-auto px-5 2xl:px-0">
+                    <span class="h1-decoration">PJEVAČICA</span>
+                    <h1 class="relative pt-32">PJEVAČICA</h1>
+                    <span class="h1-subheader">Mjuzikl, jazz i uspavanke</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="max-w-7xl mx-auto my-20 px-5 2xl:px-0">
+                <div class="max-w-3xl mx-auto text-center">
+                    <span class="text-off-white text-lg lg:text-2xl italic">Gluma i pjevanje su moja profesija i velika
+                        ljubav, ne
+                        mogu ih promatrati odvojeno. Oni se u meni prožimaju i isprepliću, nadopunjuju jedna
+                        drugu…</span>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10 my-10">
+                    <div
+                        class="group w-full aspect-square bg-[url('/assets/img/nanita.webp')] bg-cover bg-no-repeat bg-center">
+                        <div
+                            class="lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 ease-in-out w-full h-full bg-black/80 p-5 flex flex-col justify-between">
+                            <h3 class="text-center">Nanita</h3>
+                            <p class="text-xs">Leonora i Vlasta ponovno surađuju kako bi realizirale "Nanitu", izniman
+                                CD s deset
+                                uspavanki rafiniranog zvuka, posvećen svijetu snova onih najmlađih. Inspirirana
+                                trudnoćom s malenom Elenom, Leonora je potaknula inicijativu i s Vlastom u studiju Ivana
+                                Popeskića ostvarila ovaj neizmjerno prigodan CD. Među najuspješnijim pjesmama nalazi se
+                                i „Mala sovica“ koju potpisuju Ines Prajo i Arjana Kunštek, i koja je danas,
+                                zahvaljujući i Leonorinim nježnim glasom i majčinskim duhom, među najslušanijim
+                                uspavankama novih generacija.</p>
+                            <button id="openModal1" class="text-off-white underline hover:no-underline mt-2">Poslušaj
+                                pjesmu</button>
+                        </div>
+                    </div>
+                    <div
+                        class="group w-full aspect-square bg-[url('/assets/img/bijeli_bozic.webp')] bg-cover bg-no-repeat bg-center">
+                        <div
+                            class="lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 ease-in-out w-full h-full bg-black/80 p-5 flex flex-col justify-between">
+                            <h3 class="text-center">Bijeli Božić</h3>
+                            <p class="text-xs">Kombinacija nježnog glasa i romantičnog zvuka harfe Vlaste Hribar idealna
+                                je za
+                                blagdansko božićno ozračje. Na CD-u nalaze se najpopularnije božićne pjesme koje se
+                                tradicionalno pjevaju u svijetu, kao i hrvatski božićni napjevi, za koje aranžmane
+                                potpisuje Ivan Popeskić – autor čiji je skladateljski i aranžerski rad već nagrađivan
+                                "Porinom", te sa kojim Leonora već drugi put surađuje.</p>
+                            <button id="openModal2" class="text-off-white underline hover:no-underline mt-2">Poslušaj
+                                pjesmu</button>
+                        </div>
+                    </div>
+                    <div
+                        class="group w-full aspect-square bg-[url('/assets/img/moj_mali_svijet.webp')] bg-cover bg-no-repeat bg-center">
+                        <div
+                            class="lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 ease-in-out w-full h-full bg-black/80 p-5 flex flex-col justify-between">
+                            <h3 class="text-center">Moj mali svijet</h3>
+                            <p class="text-xs">Nježnu ambijentalnu jazz maniru glazbe prvog Leonorinog nosača zvuka,
+                                upotpunila su
+                                velika imena iz svijeta jazza koja su gostovala na CD-u: Boško Petrović, Ivo Popeskić,
+                                Henry Radanović, Elvis Stanić, Saša Nestorović, Marko Lazarić, Darko Jurković Charly,
+                                Olja Desić, Boris Popov, Ante Gelo, Branko Sterpin, Ricardo Luque, a autorske skladbe
+                                potpisuju Duško Rapotec – Ute, tekstopisac Robert Pilepić, te aranžmane Ivan Popeskić.
+                            </p>
+                            <button id="openModal3" class="text-off-white underline hover:no-underline mt-2">Poslušaj
+                                pjesmu</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <a href="#" class="primary-button">Informacije i nabava</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid lg:grid-cols-4 gap-10 max-w-7xl mx-auto my-20">
+                <div class="w-full lg:aspect-square">
+                    <img src="/assets/img/gianni_i_prijatelji.webp" class="w-full aspect-square object-cover object-top"
+                        alt="Leonora Surian pjeva na koncertu 'Gianni i prijatelji' uz bend na pozornici.">
+                    <p class="text-right pr-5 pt-2">Gala koncert Gianni i prijatelji</p>
+                </div>
+                <div class="w-full lg:aspect-square">
+                    <img src="/assets/img/promocija_moj_mali_svijet.webp"
+                        class="w-full aspect-square object-cover object-top"
+                        alt="Leonora Surian nastupa na promociji albuma 'Moj mali svijet', okružena glazbenicima.">
+                    <p class="text-right pr-5 pt-2">Promocija albuma “Moj mali svijet”</p>
+                </div>
+                <div class="w-full lg:aspect-square">
+                    <img src="/assets/img/humanitarni_koncert_hnk_rijeka.webp"
+                        class="w-full aspect-square object-cover object-top"
+                        alt="Leonora Surian pjeva na humanitarnom koncertu u HNK Rijeka, okružena orkestrom i zborom">
+                    <p class="text-right pr-5 pt-2">Humanitarni koncert u HNK u Rijeci</p>
+                </div>
+                <div class="w-full lg:aspect-square">
+                    <img src="/assets/img/nastup_pb_club.webp" class="w-full aspect-square object-cover object-top"
+                        alt="Leonora Surian nastupa u PB Clubu s bendom, okružena publikom.">
+                    <p class="text-right pr-5 pt-2">Nastup u pb club</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="max-w-7xl mx-auto grid grid-cols-1 my-20 gap-10">
+                <div class="w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/ygttfpYiA_8?si=Ems2B3OV2CoM3o9d"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/sp8JoLvTzBs?si=BrJex-wWtR-92ogc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/wFgdsGun-WI?si=1SjRlUvhaoTYloWY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/aRxddSj1mIk?si=A41DLTxNYWjFBuPJ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/cjK3alAMEgE?si=-nyEKT4ToDSDv-R1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/1mhP54zDHiQ?si=XwLiYZHzXcf8zp7n"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Modals -->
+        <!-- Modal 1 -->
+        <div id="modal1" class="fixed inset-0 bg-primary-red-600/70 flex items-center justify-center hidden">
+            <div class="bg-primary-red-600 p-5 rounded-lg shadow-lg relative">
+                <iframe class="h-96 aspect-video" src="https://www.youtube.com/embed/loiqhXA88_w?si=rrNLvFo4WECpMXSQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button id="closeModal1"
+                    class="bg-gray-500 text-white px-4 py-2 absolute right-0 -bottom-10">Zatvori</button>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div id="modal2" class="fixed inset-0 bg-primary-red-600/70 flex items-center justify-center hidden">
+            <div class="bg-primary-red-600 p-5 rounded-lg shadow-lg relative">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Tnvar-IyY9Q?si=bLj2n695sQ8hseOG"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button id="closeModal2"
+                    class="bg-gray-500 text-white px-4 py-2 absolute right-0 -bottom-10">Zatvori</button>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div id="modal3" class="fixed inset-0 bg-primary-red-600/70 flex items-center justify-center hidden">
+            <div class="bg-primary-red-600 p-5 rounded-lg shadow-lg relative">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lD_KUcY6jac?si=Px0NPLcxYtB36TJI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button id="closeModal3"
+                    class="bg-gray-500 text-white px-4 py-2 absolute right-0 -bottom-10">Zatvori</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="w-full bg-black h-40 flex items-center justify-center">
+            <div class="flex flex-col items-center">
+                <p>LEONORA SURIAN POPOV</p>
+                <div class="border-b border-off-white w-40"></div>
+                <div class="flex gap-5 pt-5">
+                    <a href="https://www.instagram.com/leonorasurian/"><img src="/assets/img/insta.svg"
+                            alt="instagram logo svg" class="size-6 fill-off-white hover:fill-secondary-yellow-100"></a>
+                    <a
+                        href="https://www.facebook.com/people/Leonora-Surian-Popov/pfbid027JkLcD8RR683jh9dVBep4eYKDx2UzsZZ1eqsusnSkpjZ5vY42wGbiswkh2Jq6VXrl/"><img
+                            src="/assets/img/face.svg" alt="facebook logo svg"
+                            class="size-6 fill-off-white hover:fill-secondary-yellow-100"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modals = [
+                { openButton: 'openModal1', modal: 'modal1', closeButton: 'closeModal1' },
+                { openButton: 'openModal2', modal: 'modal2', closeButton: 'closeModal2' },
+                { openButton: 'openModal3', modal: 'modal3', closeButton: 'closeModal3' },
+            ];
+
+            modals.forEach(({ openButton, modal, closeButton }) => {
+                const openBtn = document.getElementById(openButton);
+                const modalEl = document.getElementById(modal);
+                const closeBtn = document.getElementById(closeButton);
+
+                openBtn.addEventListener('click', () => {
+                    modalEl.classList.remove('hidden');
+                });
+
+                closeBtn.addEventListener('click', () => {
+                    modalEl.classList.add('hidden');
+                });
+
+                window.addEventListener('click', (event) => {
+                    if (event.target === modalEl) {
+                        modalEl.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

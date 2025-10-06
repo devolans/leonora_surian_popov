@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/main.css">
+    <title>Leonora Surian Popov - Službena Stranica Glumice, Pjevačice i Autorice</title>
+    <meta name="description"
+        content="Dobrodošli na službenu stranicu Leonore Surian Popov, poznate hrvatske glumice, pjevačice i autorice. Otkrijte njezinu biografiju, umjetničke projekte, kazališne uloge i glazbene albume.">
+    <script src="/assets/navigation.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="w-full bg-primary-red-600 header-shadow z-10 relative px-5 2xl:px-0">
+            <div class="max-w-7xl mx-auto py-2 flex justify-between items-center">
+                <a href="/" class="group">
+                    <div
+                        class="size-16 rounded-full border border-off-white flex items-center justify-center group-hover:border-2 transition-all ease-in-out duration-300">
+                        <span class="leading-4 font-playfair text-4xl text-off-white">LS</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex">
+                    <a href="/biografija/">BIO</a>
+                    <a href="/gluma/">GLUMA</a>
+                    <a href="/glazba/">GLAZBA</a>
+                    <div class="dropdown">
+                        <a href="#"><span class="flex gap-4 items-center">PROJEKTI <img src="/assets/img/down-arrow.svg"
+                                    alt="down arrow svg" class="size-4"></span></a>
+                        <div class="dropdown-content">
+                            <a href="projekti/jalta,jalta">JALTA, JALTA!</a>
+                            <a href="projekti/najbolji-vicevi-o-plavusama" class="mt-2">NAJBOLJI VICEVI O PLAVUŠAMA</a>
+                        </div>
+                    </div>
+                    <a href="/press/">PRESS</a>
+                    <a href="/kontakt/">KONTAKT</a>
+                </nav>
+                <div class="size-16 lg:flex items-center hidden">
+                    <div class="dropdown">
+                        <a href="#">
+                            <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-10">
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="/" class="size-10 flex items-center">
+                                <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-10">
+                            </a>
+                            <a href="/it/" class="size-10 flex items-center mt-4">
+                                <img src="/assets/img/ita.svg" alt="Italian flag svg" class="size-10">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- hamburger -->
+                <div class="lg:hidden flex items-center">
+                    <button id="hamburger-btn" class="text-off-white hover:text-secondary-yellow-100 focus:outline-none"
+                        aria-label="Toggle menu" aria-expanded="false">
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                        <span class="block w-6 h-0.5 bg-current my-1"></span>
+                    </button>
+                </div>
+
+                <div id="mobile-menu"
+                    class="lg:hidden absolute top-full left-0 w-full bg-primary-red-600 header-shadow z-20">
+                    <div class="flex flex-col items-center py-4 space-y-2">
+                        <!-- Added actual links -->
+                        <a href="/biografija/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">BIO</a>
+                        <a href="/gluma/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">GLUMA</a>
+                        <a href="/glazba/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">GLAZBA</a>
+                        <!-- Example for Projects - needs JS for dropdown or separate links -->
+                        <a href="/projekti/jalta,jalta/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PROJEKT:
+                            Jalta, Jalta</a>
+                        <a href="/projekti/najbolji-vicevi-o-plavusama/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PROJEKT:
+                            Vicevi</a>
+                        <a href="/press/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">PRESS</a>
+                        <a href="/kontakt/"
+                            class="block text-off-white hover:text-secondary-yellow-100 px-3 py-2 transition duration-200 w-full text-center">KONTAKT</a>
+                        <!-- Mobile Language Switcher Example -->
+                        <div class="flex justify-center gap-4 mt-4 pt-4 border-t border-primary-red-400 w-full px-4">
+                            <a href="/" class="opacity-50 hover:opacity-100 transition duration-200">
+                                <img src="/assets/img/cro.svg" alt="Croatian flag svg" class="size-8">
+                            </a>
+                            <a href="/it/" class="opacity-50 hover:opacity-100 transition duration-200">
+                                <img src="/assets/img/ita.svg" alt="Italian flag svg" class="size-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row mb-20 px-5 2xl:px-0">
+                <img src="/assets/img/leonora_header.webp" alt="Žena s bujnom kosom i modernim nakitom"
+                    class="w-full md:w-2/3 object-cover object-center">
+                <div class="relative flex md:items-center md:ml-10 py-10 md:py-0">
+                    <span class="absolute top-16 -right-20 text-[7rem] text-off-white/5 font-playfair">Leonora</span>
+                    <div class="relative">
+                        <h1 class="text-4xl lg:text-6xl">Leonora Surian Popov</h1>
+                        <p class="font-playfair text-xl lg:text-2xl mt-5">Staze glume, glazbe i života isprepliću se u
+                            umjetničku
+                            simfoniju</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="max-w-7xl mx-auto my-20 grid grid-cols-2 gap-10 px-5 2xl:px-0">
+                <div class="flex items-center col-span-2 lg:col-span-1">
+                    <div>
+                        <h2>Od Leonorinih prvih koraka pa sve do nagrada i priznanja</h2>
+                        <p class="mt-10 mb-5">Odrasla na daskama koje život znače, uz melodije oca opernog pjevača i
+                            kistove majke slikarice, Leonora je od najranije dobi bila predodređena za svijet umjetnosti
+                            - njezin životni put od Rijeke do Rima kroz glazbu, glumu i ples, odražava renesansnu
+                            svestranost koja rijetko koga ostavlja ravnodušnim.</p>
+                        <img src="/assets/img/trudna_i_lijepa.webp" alt="Žena s bujnom kosom i modernim nakitom"
+                            class="w-full md:w-1/2 mx-auto object-cover object-center my-5 lg:hidden">
+                        <p class="mb-5">Leonora, čiji talent prelazi granice pozornice, izvanredno se izražava kroz
+                            raznolike uloge - od Shakespeareove Ofelije do Webberove Evite, dok njezine glazbene
+                            kreacije dodiruju duše slušatelja, bilo kroz intimne jazz manire ili dirljive uspavanke za
+                            najmlađe.</p>
+                        <p class="mb-10">U svijetu umjetnosti gdje strast i posvećenost kroje put uspjeha, Leonora
+                            istinski sija - nagrađivana ulogama koje dotiču srca publike, njezina ljubav prema sceni i
+                            umjetnosti teče kroz sve što stvara, inspirirajući nove generacije umjetnika da slijede
+                            svoje snove.</p>
+                        <a href="biografija/" class="primary-button">Biografija</a>
+                    </div>
+                </div>
+                <div class="relative justify-end items-start hidden lg:flex">
+                    <div class="absolute bg-primary-red-400 w-full h-96 -z-10 top-16 -right-16"></div>
+                    <div
+                        class="bg-[url('/assets/img/trudna_i_lijepa.webp')] h-[35rem] w-4/6 bg-center bg-cover bg-no-repeat relative">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="max-w-7xl mx-auto my-20 grid lg:grid-cols-2 px-5 2xl:px-0">
+                <div class="w-full h-full bg-[url('/assets/img/leonora-glazba.webp')] bg-cover bg-top hidden md:block">
+                </div>
+                <div class="lg:p-20 lg:bg-primary-red-500">
+                    <h2>Glazba</h2>
+                    <span class="text-off-white">Mjuzikl, jazz i uspavanke</span>
+                    <img src="/assets/img/leonora-glazba.webp" alt="Žena s bujnom kosom i modernim nakitom"
+                        class="w-full md:w-1/2 mx-auto object-cover object-center my-5 lg:hidden">
+                    <p class="mt-10 mb-5">Glazba je srž izražavanja Leonore, prostor gdje se njena strast prema glumi
+                        susreće s melodijom njenog srca.</p>
+                    <p class="mb-5">Taj simbiozni odnos između pjevanja i glume ne samo da obogaćuje njezine nastupe,
+                        već pruža dublji uvid u emocionalni svijet likova koje tumači.</p>
+                    <p class="mb-10">Njezin put u svijet glazbe vodi kroz nježne zvuke jazza, romantične melodije harfe
+                        i intimne uspavanke, gdje svaki nosač zvuka predstavlja odraz njenog unutarnjeg svijeta, težnje
+                        za ljepotom i umjetnošću koja spaja generacije.</p>
+                    <a href="glazba/" class="primary-button">Glazba</a>
+                </div>
+                <div class="lg:p-20 my-10 lg:my-0 lg:bg-primary-red-500">
+                    <h2>Gluma</h2>
+                    <span class="text-off-white">Mjuzikl, jazz i uspavanke</span>
+                    <img src="/assets/img/evita.webp" alt="Žena s bujnom kosom i modernim nakitom"
+                        class="w-full md:w-1/2 mx-auto object-cover object-center my-5 lg:hidden">
+                    <p class="mt-10 mb-5">Već od najranijih dana, Leonora je živjela i disala pozorište, igrajući se u
+                        kostimima, pjevajući u hodnicima i pronalazeći utočište iza zavjesa.</p>
+                    <p class="mb-5">Njeno djetinjstvo prožeto umjetnošću odredilo je put do kazališnih daski koje za nju
+                        znače život. Danas, s istom onom razigranošću, ali sa zrelošću i dubinom interpretacije koja
+                        dolazi samo s iskustvom, Leonora tumači likove koji odjekuju daleko izvan kazališnih zidina.</p>
+                    <p class="mb-10">Njezina sposobnost da oživi složene likove, od klasičnih tragedija do suvremenih
+                        dramskih djela, govori o talentu koji se ne zadovoljava površnim interpretacijama.</p>
+                    <a href="gluma/" class="primary-button">Gluma</a>
+                </div>
+                <div class="w-full h-full bg-[url('/assets/img/evita.webp')] bg-cover bg-top hidden md:block">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="max-w-7xl mx-auto my-20 px-5 2xl:px-0">
+                <h2 class="md:text-center">PROJEKTI</h2>
+                <div class="grid md:grid-cols-2 my-16 md:text-center">
+                    <div class="md:border-r md:border-off-white md:px-10 py-5 flex flex-col justify-between">
+                        <h3>Jalta, Jalta obitelji Surian - Ona, Tata i dva Brata</h3>
+                        <div>
+                            <p class="mt-10 mb-5">Leonora Surian, u srcu umjetničke obitelji Surian, predstavlja temelj
+                                projekta "Jalta, Jalta obitelji Surian - Ona, Tata i dva Brata", gdje se njezina strast
+                                prema inovacijama i kreativnosti spaja s obiteljskim talentom za glumu i glazbu.</p>
+                            <p class="mb-5">Adaptacijom ovog poznatog mjuzikla, Leonora je s režiserkom Mojcom Horvat
+                                stvorila komornu verziju koja odjekuje intimnošću i toplinom doma, pružajući jedinstven
+                                doživljaj za publiku.</p>
+                            <p class="mb-10">Ovaj projekt ne samo da slavi glazbeno-scensku umjetnost, već i demonstrira
+                                kako se umjetnost može dijeliti i stvarati u krugu obitelji, pretvarajući svaki prostor
+                                u pozornicu za izražavanje i zajedništvo.</p>
+                            <a href="projekti/jalta,jalta/" class="primary-button">Jalta, Jalta</a>
+                        </div>
+                    </div>
+                    <div class="md:border-l md:border-off-white md:px-10 py-5 flex flex-col justify-between">
+                        <h3>Najbolji vicevi o plavušama</h3>
+                        <div>
+                            <p class="mt-10 mb-5">Leonora Surian oduševljava humorom u svojoj knjizi "Vic je što sam
+                                plava - najbolji vicevi o plavušama", zbirki koja sa sobom nosi važnu poruku: smijeh je
+                                univerzalni lijek.</p>
+                            <p class="mb-5">Kroz oko 500 duhovitih zapleta, ova plavuša, uspješna u glumi i glazbi,
+                                razbija stereotipe, pozivajući sve, pa čak i plavuše, na smijeh na vlastiti račun. </p>
+                            <p class="mb-10">Ilustrirana šarmantnim crtežima Stefani Čober, knjiga predstavlja veseli
+                                podsjetnik da je sposobnost smijanja sebi znak mentalnog zdravlja, dok istovremeno
+                                istražuje zanimljiv fenomen: zašto se vicevi o plavušama šire svijetom, čak i tamo gdje
+                                plavuše prirodno ne postoje.</p>
+                            <a href="projekti/najbolji-vicevi-o-plavusama/" class="primary-button">Vicevi o
+                                plavušama</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="w-full bg-black h-40 flex items-center justify-center">
+            <div class="flex flex-col items-center">
+                <p>LEONORA SURIAN POPOV</p>
+                <div class="border-b border-off-white w-40"></div>
+                <div class="flex gap-5 pt-5">
+                    <a href="https://www.instagram.com/leonorasurian/"><img src="assets/img/insta.svg"
+                            alt="instagram logo svg" class="size-6 fill-off-white hover:fill-secondary-yellow-100"></a>
+                    <a
+                        href="https://www.facebook.com/people/Leonora-Surian-Popov/pfbid027JkLcD8RR683jh9dVBep4eYKDx2UzsZZ1eqsusnSkpjZ5vY42wGbiswkh2Jq6VXrl/"><img
+                            src="assets/img/face.svg" alt="facebook logo svg"
+                            class="size-6 fill-off-white hover:fill-secondary-yellow-100"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
