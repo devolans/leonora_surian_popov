@@ -17,8 +17,8 @@
             <div class="max-w-7xl mx-auto py-2 flex justify-between items-center">
                 <a href="/it" class="group">
                     <div
-                        class="size-16 rounded-full border border-off-white flex items-center justify-center group-hover:border-2 transition-all ease-in-out duration-300">
-                        <span class="leading-4 font-playfair text-4xl text-off-white">LS</span>
+                        class="size-10 lg:size-12 rounded-full border border-off-white flex items-center justify-center group-hover:border-2 transition-all ease-in-out duration-300">
+                        <span class="leading-4 font-playfair text-2xl lg:text-3xl text-off-white">LS</span>
                     </div>
                 </a>
                 <nav class="hidden lg:flex">
@@ -38,7 +38,7 @@
                     <a href="/it/stampa/">STAMPA</a>
                     <a href="/it/contatti/">CONTATTI</a>
                 </nav>
-                <div class="size-16 lg:flex items-center hidden">
+                <div class="size-10 lg:size-12 lg:flex items-center hidden">
                     <div class="dropdown">
                         <a href="#">
                             <img src="/assets/img/ita.svg" alt="bandiera croata" class="size-10">
@@ -114,6 +114,11 @@
                 </div>
                 <div class="lg:col-span-6 mt-10 lg:mt-0">
                     <form action="">
+                        <!-- Honeypot fields - hidden from users but visible to bots -->
+                        <div class="honeypot-field">
+                            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+                            <input type="email" name="email_confirm" tabindex="-1" autocomplete="off" />
+                        </div>
                         <div class="relative w-full">
                             <input id="name" name="name" type="text"
                                 class="peer h-10 w-full border-l-0 border-r-0 border-t-0 border-b-2 border-primary-red-100 text-white placeholder-transparent bg-transparent focus:outline-none"
@@ -152,6 +157,19 @@
                                 al trattamento dei miei dati per rispondere alla richiesta.</label>
                         </div>
                         <button type="submit" class="primary-button mt-5">Invia Messaggio</button>
+                        <div id="form-error" class="hidden mt-5 p-4 bg-primary-red-600 rounded-md border-2 border-primary-red-100">
+                            <p class="text-off-white text-sm">
+                                <strong>Il modulo è attualmente non disponibile.</strong><br>
+                                La prego di chiamarmi direttamente al telefono: 
+                                <a href="tel:+385989689157" class="text-secondary-yellow-100 hover:text-secondary-yellow-200 underline font-medium">+385 98 968 9157</a>
+                            </p>
+                        </div>
+                        <div id="spam-error" class="hidden mt-5 p-4 bg-red-600 rounded-md border-2 border-red-300">
+                            <p class="text-off-white text-sm">
+                                <strong>Rilevata attività sospetta.</strong><br>
+                                La prego di attendere alcuni secondi e riprovare, oppure chiami direttamente.
+                            </p>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -173,6 +191,97 @@
             </div>
         </div>
     </footer>
+    <style>
+        .honeypot-field {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+            visibility: hidden;
+            height: 0;
+            width: 0;
+            z-index: -1;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.querySelector("form");
+            const errorDiv = document.getElementById("form-error");
+            const spamErrorDiv = document.getElementById("spam-error");
+            const formLoadTime = Date.now();
+            let userInteracted = false;
+            
+            // Track user interaction
+            const formFields = form.querySelectorAll('input[type="text"], input[type="email"], textarea');
+            formFields.forEach(field => {
+                field.addEventListener('focus', () => {
+                    userInteracted = true;
+                });
+            });
+            
+            // Check rate limiting
+            function checkRateLimit() {
+                const lastSubmission = localStorage.getItem('lastFormSubmissionIT');
+                const now = Date.now();
+                const fiveMinutes = 5 * 60 * 1000;
+                
+                if (lastSubmission && (now - parseInt(lastSubmission)) < fiveMinutes) {
+                    return false;
+                }
+                return true;
+            }
+            
+            // Spam detection function
+            function detectSpam() {
+                // Check honeypot fields
+                const honeypotWebsite = form.querySelector('input[name="website"]').value;
+                const honeypotEmail = form.querySelector('input[name="email_confirm"]').value;
+                
+                if (honeypotWebsite || honeypotEmail) {
+                    return "honeypot";
+                }
+                
+                // Check timing (must spend at least 3 seconds)
+                const timeSpent = Date.now() - formLoadTime;
+                if (timeSpent < 3000) {
+                    return "too_fast";
+                }
+                
+                // Check user interaction
+                if (!userInteracted) {
+                    return "no_interaction";
+                }
+                
+                // Check rate limiting
+                if (!checkRateLimit()) {
+                    return "rate_limit";
+                }
+                
+                return false;
+            }
+            
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                
+                // Hide any existing error messages
+                errorDiv.classList.add("hidden");
+                spamErrorDiv.classList.add("hidden");
+                
+                const spamDetected = detectSpam();
+                
+                if (spamDetected) {
+                    spamErrorDiv.classList.remove("hidden");
+                    form.scrollIntoView({ behavior: "smooth", block: "center" });
+                } else {
+                    // Update rate limiting
+                    localStorage.setItem('lastFormSubmissionIT', Date.now().toString());
+                    
+                    // Show normal error message (form unavailable)
+                    errorDiv.classList.remove("hidden");
+                    form.scrollIntoView({ behavior: "smooth", block: "center" });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
